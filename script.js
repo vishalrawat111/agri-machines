@@ -163,7 +163,9 @@ function autoSlide() {
 
     scrollAmount += 1;
 
-    slider.scrollLeft += 1;
+    if (window.innerWidth > 768) {
+        slider.scrollLeft += 1;
+    }
 
     if (scrollAmount > 1000) {
 
